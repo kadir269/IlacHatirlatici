@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "İlaç Hatırlatıcı - Emine Hanım",
+    "slug": "IlacHatirlatici",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#e0f2fe"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ilachatirlatici"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#e0f2fe"
+      },
+      "package": "com.ilachatirlatici",
+      "permissions": [
+        "VIBRATE",
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM",
+        "USE_EXACT_ALARM",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "cf35f45b-4ed9-48c3-b85e-c5256a04ba17"
+      }
+    }
+  }
+}
