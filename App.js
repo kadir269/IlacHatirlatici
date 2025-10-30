@@ -17,7 +17,6 @@ import * as Notifications from 'expo-notifications';
 import * as Speech from 'expo-speech';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Device from 'expo-device';
-// import * as MailComposer from 'expo-mail-composer';
 
 // Bildirimlerin nasıl gösterileceğini ayarla
 Notifications.setNotificationHandler({
