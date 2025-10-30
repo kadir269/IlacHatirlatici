@@ -1,4 +1,4 @@
-name: Build APK
+name: Simple APK Build
 
 on:
   push:
@@ -18,16 +18,8 @@ jobs:
         node-version: '18'
         cache: 'npm'
     
-    - name: Setup Java
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin'
-        java-version: '17'
-    
-    - name: Setup Expo CLI
-      run: |
-        npm install -g @expo/cli eas-cli
-        eas --version
+    - name: Setup EAS CLI
+      run: npm install -g eas-cli
     
     - name: Install dependencies
       run: npm install
